@@ -8,7 +8,17 @@
 .justify-center{
     justify-content: center;
 }
-
+.justify-space-between{
+    justify-content: space-between;
+}
+.between-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gap-20{
+    gap: 1.25rem;
+}
 .d-grid{
     display: grid;
 }
@@ -17,6 +27,9 @@
 /* start spacing */
 .p-10{
     padding: 0.625rem;
+}
+.p-b-10{
+    padding-bottom:0.625rem ;
 }
 .p-20{
     padding: 1.25rem;
@@ -28,6 +41,24 @@
     padding-top: 1.25rem;
 }
 
+.m-t-0{
+    margin-top: 0;
+}
+.m-10{
+    margin: 0.625rem;
+}
+.m-b-10{
+    margin-bottom: 0.625rem;
+}
+.m-t-10{
+    margin-top: 0.625rem;
+}
+.m-r-10{
+    margin-right: 0.625rem;
+}
+.m-l-10{
+    margin-left: 0.625rem;
+}
 .m-20{
     margin: 1.25rem;
 }
@@ -37,8 +68,11 @@
 .m-t-20{
     margin-top: 1.25rem;
 }
-.m-t-0{
-    margin-top: 0;
+.m-r-20{
+    margin-right: 1.25rem;
+}
+.m-l-20{
+    margin-left: 1.25rem;
 }
 /* end spacing */
 /* start color */
@@ -81,5 +115,8 @@
 /* start border */
 .rad-6{
     border-radius: 0.375rem;
+}
+.rad-8{
+    border-radius: 0.5rem;
 }
 /* end border */
