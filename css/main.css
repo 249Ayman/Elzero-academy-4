@@ -55,7 +55,7 @@ a{
     z-index: 3;
 }
 .sidebar ul li{
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .sidebar ul li:hover{
     background-color:#f6f6f6 ;
@@ -89,3 +89,9 @@ a{
     width: 1.8rem;
 }
 /* end dashboard */
+/* start content */
+.content .grid-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(460px,1fr));
+}
+/* end content */
