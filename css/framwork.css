@@ -11,6 +11,9 @@
 .justify-space-between{
     justify-content: space-between;
 }
+.justify-space-around{
+    justify-content: space-around;
+}
 .between-flex{
     display: flex;
     justify-content: space-between;
@@ -45,6 +48,15 @@
 }
 .p-t-20{
     padding-top: 1.25rem;
+}
+p-l-20{
+    padding-left: 1.25rem;
+}
+.p-100{
+    padding: 6.25rem;
+}
+.p-b-100{
+    padding-bottom: 6.25rem;
 }
 m-auto{
     margin: auto;
@@ -81,6 +93,21 @@ m-auto{
 }
 .m-l-20{
     margin-left: 1.25rem;
+}
+.m-40{
+    margin: 2.5rem;
+}
+.m-t-40{
+    margin-top: 2.5rem;
+}
+.m-b-40{
+    margin-bottom: 2.5rem;
+}
+.m-60{
+    margin: 3.75rem;
+}
+.m-t-60{
+    margin-top: 3.75rem;
 }
 /* end spacing */
 /* start color */

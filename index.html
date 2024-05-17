@@ -67,6 +67,8 @@
                 </li>
             </ul>
         </div>
+        <!-- end sidebar -->
+        <!-- start dashboard -->
         <div id="dashboard" class="dashboard">
             <div class="head p-20 between-flex bg-white">
                 <div class="search p-relative">
@@ -79,18 +81,21 @@
                     <img src="/img/avatar.png" alt="">
                 </div>    
             </div>
-            <div class="title">
-            </div>
             <div class="content container">
-                <h2>Dashboard</h2>
+                <div class="title">
+                    <h2>Dashboard</h2>
+                </div>
                 <div class="grid-box d-grid gap-20">
-                    <div class="box bg-white p-20">
-                        <div class="welcome-head">
-                            <h3></h3>
-                            <p></p>
-                            <img src="" alt="">
+                    <div class="box p-relative bg-white rad-8 p-b-100 ">
+                        <div class="welcome-head rad-8 d-flex justify-space-between p-20">
+                            <div class="welcome-head-content ">
+                                <h3>welcome</h3>
+                                <p>Ayman</p>    
+                            </div>
+                            <img src="/img/welcome.png" alt="">
+                            <img class="avatar p-absolute" src="/img/avatar.png" alt="">
                         </div>
-                        <div class="welcome-body">
+                        <div class="welcome-body d-flex p-20 m-t-60 txt-c justify-space-around">
                             <div>
                                 Ayman Idrees
                                 <span>Developer</span>
@@ -104,15 +109,20 @@
                                 <span>Earned</span>
                             </div>
                         </div>
-                        <a href="" class="button">Profile</a>
+                        <div class="button">
+                            <a href="" class="">Profile</a>
+                        </div>
                     </div>
-                    <div class="box bg-white p-20">
+                    <div class="draft rad-8 box bg-white p-20">
                         <h3>Quick Draft</h3>
                         <p>Write A Draft For Your Ideas</p>
                         <form action="">
                             <input type="text" placeholder="Title" name="" id="">
-                            <textarea name="" id=""></textarea>
+                            <textarea name="" placeholder="Your Thoughts" id=""></textarea>
                         </form>
+                        <div class="draft-button">
+                            <a href="" id="">Save</a>
+                        </div>
                     </div>
                     <div class="box"></div>
                     <div class="box"></div>
