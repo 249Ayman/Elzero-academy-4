@@ -8,59 +8,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/framwork.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <title>Ayman's Dashboard</title>
 </head>
 <body>
-    <div class="page d-flex bg-second">
-        <div class="sidebar bg-white p-20 p-relative">
-            <h3 class="p-relative p-b-20 m-t-0">Ayman</h3>
+    <div class="page">
+        <div class="sidebar ">
+            <h3 class="">Ayman</h3>
             <ul>
-                <li class="m-t-20">
-                    <a class="active d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li class="active">
+                    <a class="active" href="">
                         <i class="fa-regular fa-chart-bar fa-fw m-r-10"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-solid fa-gear fa-fw m-r-10"></i>
                         <span>Settings</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-regular fa-user fa-fw m-r-10"></i>
                         <span>Profile</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-solid fa-diagram-project fa-fw m-r-10"></i>
                         <span>Projects</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-solid fa-graduation-cap fa-fw m-r-10"></i>
                         <span>Courses</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-regular fa-circle-user fa-fw m-r-10"></i>
                         <span>Friends</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-regular fa-file fa-fw m-r-10"></i>
                         <span>Files</span>
                     </a>
                 </li>
-                <li class="m-t-10">
-                    <a class="d-flex align-center fs-14 c-black p-10 rad-8" href="">
+                <li>
+                    <a class="" href="">
                         <i class="fa-regular fa-credit-card fa-fw m-r-10"></i>
                         <span>Plans</span>
                     </a>
@@ -70,13 +69,13 @@
         <!-- end sidebar -->
         <!-- start dashboard -->
         <div id="dashboard" class="dashboard">
-            <div class="head p-20 between-flex bg-white">
-                <div class="search p-relative">
+            <div class="header">
+                <div class="search">
                     <form action="">
                         <input placeholder="Type A Keyword" type="search">
                     </form>
                 </div>
-                <div class="icons p-relative d-flex align-center gap-20">
+                <div class="icons">
                     <i class="fa-regular fa-bell fa-lg"></i>
                     <img src="/img/avatar.png" alt="">
                 </div>    
@@ -85,17 +84,17 @@
                 <div class="title">
                     <h2>Dashboard</h2>
                 </div>
-                <div class="grid-box d-grid gap-20">
-                    <div class="box p-relative bg-white rad-8 p-b-100 ">
-                        <div class="welcome-head rad-8 d-flex justify-space-between p-20">
-                            <div class="welcome-head-content ">
-                                <h3>welcome</h3>
+                <div class="grid-box">
+                    <div class="box welcome">
+                        <div class="welcome-head">
+                            <div class="box-title">
+                                <h2>welcome</h2>
                                 <p>Ayman</p>    
                             </div>
                             <img src="/img/welcome.png" alt="">
-                            <img class="avatar p-absolute" src="/img/avatar.png" alt="">
+                            <img class="avatar" src="/img/avatar.png" alt="">
                         </div>
-                        <div class="welcome-body d-flex p-20 m-t-60 txt-c justify-space-around">
+                        <div class="welcome-body ">
                             <div>
                                 Ayman Idrees
                                 <span>Developer</span>
@@ -113,20 +112,131 @@
                             <a href="" class="">Profile</a>
                         </div>
                     </div>
-                    <div class="draft rad-8 box bg-white p-20">
-                        <h3>Quick Draft</h3>
-                        <p>Write A Draft For Your Ideas</p>
+                    <div class="box draft">
+                        <div class="box-title">
+                            <h2>Quick Draft</h2>
+                            <p>Write A Draft For Your Ideas</p>    
+                        </div>
                         <form action="">
                             <input type="text" placeholder="Title" name="" id="">
                             <textarea name="" placeholder="Your Thoughts" id=""></textarea>
+                            <input class="draft-button" type="submit" value="save" >
                         </form>
-                        <div class="draft-button">
-                            <a href="" id="">Save</a>
+                    </div>
+                    <div class="box targets">
+                        <div class="box-title">
+                            <h2>Yearly Targets</h2>
+                            <p>Targets Of The Year</p>
+                        </div>
+                        <div class="target-progress blue">
+                            <div class="icons">
+                                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                            </div>
+                            <div class="details">
+                                <span>Money</span>
+                                <span>$20,000</span>
+                                <div class="bar money">
+                                    <span class="" style="width: 80%;">
+                                        <span>80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-progress yellow">
+                            <div class="icons">
+                                <i class="fa-solid fa-code fa-lg c-orange"></i>
+                            </div>
+                            <div class="details">
+                                <span>Projects</span>
+                                <span>24</span>
+                                <div class="bar projects">
+                                    <span style="width: 55%;">
+                                        <span >55%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-progress green">
+                            <div class="icons">
+                                <i class="fa-solid fa-user fa-lg c-green"></i>
+                            </div>
+                            <div class="details">
+                                <span>Team</span>
+                                <span>12</span>
+                                <div class="bar team">
+                                    <span style="width: 75%;">
+                                        <span>75%</span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
+                    <div class="box stats">
+                        <div class="box-title">
+                            <h2>Tickets Statistics</h2>
+                            <p>Everything About Support Tickets</p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stats-box total">
+                                <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                                <span>2500</span>
+                                <span>Total</span>
+                            </div>
+                            <div class="stats-box pending">
+                                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                                <span>500</span>
+                                <span>Pending</span>
+                            </div>
+                            <div class="stats-box closed">
+                                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                                <span>1900</span>
+                                <span>Closed</span>
+                            </div>
+                            <div class="stats-box deleted">
+                                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                                <span>100</span>
+                                <span>Deleted</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box news">
+                        <div class="box-title">
+                            <h2>Latest News</h2>
+                        </div>
+                        <div class="news-box">
+                            <img src="/img/news-01.png" alt="">
+                            <div class="text">
+                                <h3>Created SASS Section</h3>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                            <div class="days">3 Days Ago</div>
+                        </div>
+                        <div class="news-box">
+                            <img src="/img/news-02.png" alt="">
+                            <div class="text">
+                                <h3>Created SASS Section</h3>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                            <div class="days">3 Days Ago</div>
+                        </div>
+                        <div class="news-box">
+                            <img src="/img/news-03.png" alt="">
+                            <div class="text">
+                                <h3>Created SASS Section</h3>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                            <div class="days">3 Days Ago</div>
+                        </div>
+                        <div class="news-box">
+                            <img src="/img/news-04.png" alt="">
+                            <div class="text">
+                                <h3>Created SASS Section</h3>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                            <div class="days">3 Days Ago</div>
+                        </div>
+
+                    </div>
                     <div class="box"></div>
                     <div class="box"></div>
                     <div class="box"></div>
