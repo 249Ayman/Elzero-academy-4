@@ -89,6 +89,24 @@ a{
     padding: 10px;
     border-radius: 8px;
 }
+@media(max-width:767px){
+    .sidebar ul li a{
+        display: none;
+    }
+    .sidebar>h3{
+        font-size: 13px;
+    }
+    .sidebar>h3::after{
+        display: none;
+    }
+    .sidebar>h3::before{
+        display: none;
+    }
+    .sidebar{
+        width: 60px;
+        padding: 10px;
+    }
+}
 /* end sidebar */
 /* start page */
 .page{
@@ -167,14 +185,9 @@ a{
     border-radius: 8px;
     background: white;
 }
-.dashboard .content .grid-box .box .box-title h2{
-
-}
 .dashboard .content .grid-box .box .box-title p{
     color: #888;
-
 }
-
 .dashboard .content .box .welcome-head{
     display: flex;
     justify-content: space-between;
@@ -202,6 +215,17 @@ a{
     text-align: center;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+@media(max-width:767px){
+    .dashboard .welcome-body{
+        flex-direction: column;
+    }
+    .dashboard .welcome-body span{
+        margin-bottom: 10px;
+    }
+    .dashboard .welcome-head .welcome-img{
+        display: none;
+    }
 }
 .dashboard .content .welcome-body span{
     display: block;
@@ -410,7 +434,7 @@ a{
     gap: 20px;
 }
 .dashboard .stats .stats-grid .stats-box{
-    width: 230px;
+    width: 225px;
     height: 140px;
     text-align: center;
     border: 1px solid #ccc;
@@ -445,18 +469,35 @@ a{
     padding: 20px;
 }
 .dashboard .news .news-box{
-
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
 }
 .dashboard .news .news-box img{
-
+    width: 100px;
+    border-radius: 8px;
+}
+.dashboard .news .news-box .text{
+    flex-grow: 1;
 }
 .dashboard .news .news-box .text h3{
-
+    font-size: 16px;
 }
 .dashboard .news .news-box .text p{
-    
+    color: #888;
+    font-size: 14px;
 }
 .dashboard .news .news-box .days{
-    
+    background: #eee;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+@media(max-width:767px){
+    .dashboard .news .news-box{
+        flex-direction: column;
+    }
 }
 /* end dashboard */
