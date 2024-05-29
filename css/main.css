@@ -24,6 +24,14 @@ a{
 }
 /* end global rules */
 /* start components */
+:root{
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -90,7 +98,7 @@ a{
     border-radius: 8px;
 }
 @media(max-width:767px){
-    .sidebar ul li a{
+    .sidebar ul li span{
         display: none;
     }
     .sidebar>h3{
@@ -118,6 +126,7 @@ a{
 /* start dashboard */
 .dashboard{
     width: 100%;
+    overflow: hidden;
 }
 .dashboard .header{
     display: flex;
@@ -177,7 +186,7 @@ a{
 }
 .dashboard .content .grid-box{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(460px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
     gap: 20px;
 }
 .dashboard .content .grid-box .box{
@@ -226,6 +235,10 @@ a{
     .dashboard .welcome-head .welcome-img{
         display: none;
     }
+    .dashboard .content .grid-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
 }
 .dashboard .content .welcome-body span{
     display: block;
@@ -233,7 +246,7 @@ a{
 .dashboard .content .button{
     margin: 0 15px 15px auto;
     padding: 5px 10px;
-    background: #0075ff;
+    background: var(--blue-color);
     width: fit-content;
     border-radius: 8px;
 }
@@ -269,7 +282,7 @@ a{
     width: fit-content;
     margin-left: auto;
     padding: 5px 10px;
-    background: #0075ff;
+    background: var(--blue-color);
     color: white;
     cursor: pointer;
     display: block;
@@ -277,7 +290,7 @@ a{
     border-radius: 8px;
 }
 .dashboard .content .draft form .draft-button:hover{
-    background: #0d69d5;
+    background: var(--blue-alt-color);
 }
 .dashboard .content .draft .draft-button a{
     color: white;
@@ -500,4 +513,70 @@ a{
         flex-direction: column;
     }
 }
+.dashboard .tasks{
+    padding: 20px;
+}
+.dashboard .tasks .tasks-box{
+    display: flex;
+}
+.dashboard .tasks .tasks-box .span{
+    flex-grow: 1;
+}
+.dashboard .tasks .tasks-box span:last-of-type{
+    display: block;
+    color: var(--grey-color);
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding:15px 0;
+}
+.dashboard .tasks .done{
+    opacity: 0.3;
+}
+.dashboard .tasks .done .span{
+    text-decoration: line-through;
+}
+.dashboard .tasks .tasks-box i{
+    transition: 0.3s;
+}
+.dashboard .tasks .tasks-box i:hover{
+    color: var(--red-color);
+}
+.dashboard .top{
+    padding: 20px;
+}
+.dashboard .top .key{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.dashboard .top .key span:first-child , .dashboard .top .key span:last-of-type{
+    color: var(--grey-color);
+}
+.dashboard .top .top-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.dashboard .top .top-box span:last-of-type{
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.dashboard .uploads .news-box{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.dashboard .uploads .news-box img{
+    width: 40px;
+    height: 40px;
+}
+.dashboard .uploads .news-box .text h3{
+    margin: 0;
+}
+@media(max-width:767px){
+    .dashboard .uploads .news-box{
+        flex-direction: row;
+    }
+}
+
 /* end dashboard */
