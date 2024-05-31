@@ -630,4 +630,104 @@ a{
     right: 0;
     bottom: 0;
 }
+@media(max-width:767px){
+    .dashboard .progress .progress-img img{
+        display: none;
+    }
+}
+.dashboard .remainders{
+    padding: 20px;
+}
+.dashboard .remainders .remainder{
+    transform: translateX(30px);
+}
+.dashboard .remainders .tasks-list{
+    position: relative;
+}
+.dashboard .remainders .tasks-list::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--blue-color);
+    border-radius: 50%;
+    left: -34px;
+    top: 17px;
+}
+.dashboard .remainders .tasks-list::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--blue-color);
+    left: -8px;
+    top: 0;
+}
+.dashboard .remainders .projects::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--green-color);
+    border-radius: 50%;
+    left: -34px;
+    top: 17px;
+}
+.dashboard .remainders .projects::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--green-color);
+    left: -8px;
+    top: 0;
+}
+.dashboard .remainders .clients::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--orange-color);
+    border-radius: 50%;
+    left: -34px;
+    top: 17px;
+}
+.dashboard .remainders .clients::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--orange-color);
+    left: -8px;
+    top: 0;
+}
+.dashboard .remainders .workshop::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--red-color);
+    border-radius: 50%;
+    left: -34px;
+    top: 17px;
+}
+.dashboard .remainders .workshop::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--red-color);
+    left: -8px;
+    top: 0;
+}
+
+.dashboard .remainders .remainder p{
+    font-weight: bold;
+    font-size: 14px;
+}
+.dashboard .remainders .remainder span{
+    color: var(--grey-color);
+    font-size: 13px;
+}
+
 /* end dashboard */
