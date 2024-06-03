@@ -875,5 +875,40 @@ a{
     border-radius: 8px;
     margin-right: 10px; 
 }
+.dashboard .table{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+.dashboard .table .table-size{
+    overflow-x: auto;
+}
+.dashboard .table table{
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.dashboard .table table thead{
+    background-color: #eee;
 
+}
+.dashboard .table table thead td{
+    font-weight: bold;
+}
+.dashboard .table table tr{
+    transition: .3s;
+}
+.dashboard .table table td{
+    padding: 20px;
+}
+.dashboard .table table tbody td{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.dashboard .table table tbody td:first-child{
+    border-left: 1px solid #eee;
+}
+.dashboard .table table tbody tr:hover{
+    background-color: #faf7f7;
+}
 /* end dashboard */
