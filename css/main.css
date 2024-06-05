@@ -38,13 +38,68 @@ a{
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.header .search{
+    position: relative;
+}
+.header .search input{
+    transition: 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.3125rem;
+    width: 9.375rem;
+    font-size: .9rem;
+}
+.header .search input:focus{
+    width: 200px;
+}
+.header .search input:focus::placeholder{
+    opacity: 0;
+}
+.header .icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header .icons img{
+    width: 1.8rem;
+}
+.content .title{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.content .title::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    bottom: 20px;
+}
+.content .title::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background: black;
+    bottom: 20px;
+    z-index: 3;
+}
 /* end components */
 /* start sidebar */
 .sidebar{
     position: relative;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     box-shadow: 0 0 10px #ddd;
     background-color: white;
 }
@@ -97,6 +152,9 @@ a{
     padding: 10px;
     border-radius: 8px;
 }
+.sidebar ul li i{
+    margin-right: 10px;
+}
 @media(max-width:767px){
     .sidebar ul li span{
         display: none;
@@ -127,62 +185,6 @@ a{
 .dashboard{
     width: 100%;
     overflow: hidden;
-}
-.dashboard .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: white;
-}
-.dashboard .header .search{
-    position: relative;
-}
-.dashboard .header .search input{
-    transition: 0.3s;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 0.3125rem;
-    width: 9.375rem;
-    font-size: .9rem;
-}
-.dashboard .header .search input:focus{
-    width: 200px;
-}
-.dashboard .header .search input:focus::placeholder{
-    opacity: 0;
-}
-.dashboard .header .icons{
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.dashboard .header .icons img{
-    width: 1.8rem;
-}
-.dashboard .content .title{
-    position: relative;
-    width: fit-content;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-.dashboard .content .title::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: white;
-    bottom: 20px;
-}
-.dashboard .content .title::before{
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 3px;
-    background: black;
-    bottom: 20px;
-    z-index: 3;
 }
 .dashboard .content .grid-box{
     display: grid;
@@ -912,3 +914,39 @@ a{
     background-color: #faf7f7;
 }
 /* end dashboard */
+/* start settings */
+.settings{
+    width: 100%;
+    overflow: hidden;
+}
+.settings .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 20px;
+}
+.settings .grid .box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.settings .box .box-title h2{
+    margin: 0;
+}
+.settings .box .box-title p{
+    color: var(--grey-color);
+}
+.settings .website textarea{
+    resize: none;
+    min-height: 150px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.settings .website .control span:last-of-type{
+    display: block;
+    margin-top: 10px;
+    color: var(--grey-color);
+    font-size: 13px;
+}
