@@ -949,9 +949,114 @@ a{
     margin-top: 20px;
     padding: 10px;
 }
+.settings .website textarea::placeholder{
+    font-size: 14px;
+}
 .settings .website .control span:last-of-type{
     display: block;
     margin-top: 10px;
     color: var(--grey-color);
     font-size: 13px;
+}
+.settings .general form label{
+    color: var(--grey-color);
+}
+.settings .general form input{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+.settings .general form input::placeholder{
+    font-size: 14px;
+}
+.settings .general form input:disabled{
+    background: #f0f4f8;
+    cursor: no-drop;
+    width: 90%;
+}
+.settings .general form a{
+    color: var(--blue-alt-color);
+    margin-left: 10px;
+}
+.settings .security .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.settings .security .info:not(:last-child){
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+
+}
+.settings .security .info span{
+    display: block;
+}
+.settings .security .info span:last-of-type{
+    color: var(--grey-color);
+    margin-top: 5px;
+    font-size: 14px;
+}
+.settings .security .info .change{
+    background: var(--blue-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.settings .security .info .change:hover{
+    background: var(--blue-alt-color);
+}
+.settings .security .info .devices{
+    background: #eee;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+.settings .social form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 8px 8px 0 ;
+    background: #f6f6f6;
+}
+.settings .social form .social-flex:focus-within i{
+    color: black;
+}
+.settings .social form .social-flex{
+    display: flex;
+}
+.settings .social form .social-flex:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.settings .social form .social-flex i{
+    background: #f6f6f6;
+    color: var(--grey-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius:8px 0 0 8px ;
+    transition: .3s;
+}
+.settings .social form input::placeholder{
+    font-size: 13px;
+}
+.settings .widgets .checkbox{
+
+}
+.settings .widgets .checkbox:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+.settings .widgets .checkbox input{
+    appearance: none;
+}
+.settings .widgets .checkbox label{
+
 }

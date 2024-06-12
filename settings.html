@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <title>Document</title>
+    <title>Settings</title>
 </head>
 <body>
     <div class="page">
@@ -103,11 +103,41 @@
                             <h2>General Info</h2>
                             <p>General Information About Your Account</p>
                         </div>
+                        <form action="">
+                            <label for="fname">First Name</label>
+                            <input type="text" placeholder="First Name" name="" id="fname">
+                            <label for="lname">Last Name</label>
+                            <input type="text" placeholder="Last Name" name="" id="lname">
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="Email" name="" id="email" disabled>
+                            <a href="">Change</a>
+                        </form>
                     </div>
                     <div class="box security">
                         <div class="box-title">
                             <h2>Security Info</h2>
                             <p>Security Information About Your Account</p>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <span>Password</span>
+                                <span>Last Change On 25/10/2021</span>
+                            </div>
+                            <a class="change" href="">Change</a>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <span>Two-Factor Authentication</span>
+                                <span>Enable/Disable The Feature</span>
+                            </div>
+                            <a href="">Change</a>
+                        </div>
+                        <div class="info">
+                            <div class="text">
+                                <span>Devices</span>
+                                <span>Check The Login Devices List</span>
+                            </div>
+                            <a class="devices" href="">Devices</a>
                         </div>
                     </div>
                     <div class="box social">
@@ -115,12 +145,57 @@
                             <h2>Social Info</h2>
                             <p>Social Media Information</p>
                         </div>
+                        <form action="">
+                            <div class="social-flex">
+                                <i class="fa-brands fa-facebook center-flex c-grey"></i>
+                                <input type="text" placeholder="Facebook" name="facebook" id="">
+                            </div>
+                            <div class="social-flex">
+                                <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                                <input type="text" placeholder="Linkedin" name="linkedin" id="">
+                            </div>
+                            <div class="social-flex">
+                                <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                                <input type="text" placeholder="Youtube" name="youtube" id="">
+                            </div>
+                            <div class="social-flex">
+                                <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                                <input type="text" placeholder="Twitter" name="twitter" id="">
+                            </div>
+                        </form>
                     </div>
                     <div class="box widgets">
                         <div class="box-title">
                             <h2>Widgets Control</h2>
                             <p>Show/Hide Widgets</p>
                         </div>
+                        <form action="">
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Quick Draft</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Yearly Targets</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Tickets Statistics</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Latest News</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Latest Tasks</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="">Top Search Items</label>
+                            </div>                            
+                            
+                        </form>
                     </div>
                     <div class="box backup">
                         <div class="box-title">
