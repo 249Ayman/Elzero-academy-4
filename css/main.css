@@ -1060,3 +1060,42 @@ a{
 .settings .widgets .checkbox label{
 
 }
+.settings .backup form{
+
+}
+.settings .backup form .radio{
+
+}
+.settings .backup form .radio input{
+    
+}
+.settings .backup .server{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+.settings .backup .server .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    width: 100%;
+    cursor: pointer;
+}
+.settings .backup .server input{
+     appearance: none;
+}
+.settings .backup .server input[type="radio"]:checked+.box{
+    border: 1px solid var(--blue-alt-color);
+}
+.settings .backup .server .box i{
+    margin-bottom: 10px;
+}
+.settings .backup .server .box span{
+    display: block;
+}
