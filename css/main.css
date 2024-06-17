@@ -31,6 +31,7 @@ a{
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
+    --fa-style-family-classic: "Font Awesome 6 Free"
 }
 .container{
     margin-left: auto;
@@ -93,6 +94,42 @@ a{
     background: black;
     bottom: 20px;
     z-index: 3;
+}
+.switch input{
+    appearance: none;
+}
+.switch .switch-toggle{
+    background: #ccc;
+    width: 74px;
+    height: 34px;
+    border-radius: 15px;
+    position: relative;
+    transition: .3s;
+}
+.switch .switch-toggle::before{
+    content: "\f00d";
+    position: absolute;
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    height: 25px;
+    width: 25px;
+    background: white;
+    color: #aaa;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch input:checked + .switch-toggle{
+    background: var(--blue-color);
+}
+.switch input:checked + .switch-toggle::before{
+    content: "\f00c";
+    left: 45px;
+    color: var(--blue-color);
 }
 /* end components */
 /* start sidebar */
@@ -952,6 +989,12 @@ a{
 .settings .website textarea::placeholder{
     font-size: 14px;
 }
+.settings .website .control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .settings .website .control span:last-of-type{
     display: block;
     margin-top: 10px;
@@ -1048,7 +1091,7 @@ a{
     font-size: 13px;
 }
 .settings .widgets .checkbox{
-
+    display: flex;
 }
 .settings .widgets .checkbox:not(:last-of-type){
     margin-bottom: 20px;
@@ -1057,17 +1100,65 @@ a{
 .settings .widgets .checkbox input{
     appearance: none;
 }
-.settings .widgets .checkbox label{
+.settings .widgets .checkbox .check{
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--blue-color);
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+}
+.settings .widgets .checkbox .check::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 800;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--blue-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    transform: scale(0) rotate(360deg);
+}
+.settings .widgets .checkbox input:checked + .check::before{
+    transform: scale(1);
+}
+.settings .backup .radio input{
+    appearance: none;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.settings .backup .radio input::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--blue-color);
+    border-radius: 50%;
+    top: 8px;
 
 }
-.settings .backup form{
-
+.settings .backup .radio input::after{
+    content: "";
+    transition: .3s;
 }
-.settings .backup form .radio{
-
+.settings .backup .radio input:checked::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--blue-color);
+    border-radius: 50%;
+    top: 14px;
+    left: 6px;
 }
-.settings .backup form .radio input{
-    
+.settings .backup .radio label{
+    margin-left: 30px;
 }
 .settings .backup .server{
     display: flex;
@@ -1083,15 +1174,17 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid;
+    border: 2px solid #eee;
     width: 100%;
     cursor: pointer;
+    transition: .3s;
 }
 .settings .backup .server input{
      appearance: none;
 }
-.settings .backup .server input[type="radio"]:checked+.box{
-    border: 1px solid var(--blue-alt-color);
+.settings .backup .server input:checked + .box {
+    border: 2px solid var(--blue-alt-color);
+    color: var(--blue-color);
 }
 .settings .backup .server .box i{
     margin-bottom: 10px;

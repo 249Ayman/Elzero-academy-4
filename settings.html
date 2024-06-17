@@ -93,8 +93,10 @@
                                 <span>Website Control</span>
                                 <span>Open/Close Website And Type The Reason</span>
                             </div>
-                            <div class="button">
-                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <div class="switch-toggle"></div>
+                            </label>
                         </div>
                         <textarea name="" placeholder="Close message content" id="" spellcheck="false"></textarea>
                     </div>
@@ -130,7 +132,10 @@
                                 <span>Two-Factor Authentication</span>
                                 <span>Enable/Disable The Feature</span>
                             </div>
-                            <a href="">Change</a>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <div class="switch-toggle"></div>
+                            </label>
                         </div>
                         <div class="info">
                             <div class="text">
@@ -169,68 +174,71 @@
                             <h2>Widgets Control</h2>
                             <p>Show/Hide Widgets</p>
                         </div>
-                        <form action="">
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Quick Draft</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Yearly Targets</label>
-                            </div>                            
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Tickets Statistics</label>
-                            </div>                            
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Latest News</label>
-                            </div>                            
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Latest Tasks</label>
-                            </div>                            
-                            <div class="checkbox">
-                                <input type="checkbox" name="" id="">
-                                <label for="">Top Search Items</label>
-                            </div>                            
-                            
-                        </form>
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Quick Draft</label>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Yearly Targets</label>
+                        </label>                            
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Tickets Statistics</label>
+                        </label>                           
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Latest News</label>
+                        </label>                            
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Latest Tasks</label>
+                        </label>                            
+                        <label class="checkbox">
+                            <input type="checkbox" name="" id="">
+                            <div class="check"></div>
+                            <label for="">Top Search Items</label>
+                        </label>                           
                     </div>
                     <div class="box backup">
                         <div class="box-title">
                             <h2>Backup Manager</h2>
                             <p>Control Backup Time And Location</p>
                         </div>
-                        <form action="">
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                <label for="">Daily</label>    
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                <label for="">Weekly</label>    
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                <label for="">Monthly</label>    
-                            </div>
-                        </form>
-                        <form class="server">
-                            <input type="radio">
-                            <label for="server-one" class="box">
-                                <i class="fa-solid fa-server d-block mb-10"></i>
+                        <label class="radio">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Daily</label>    
+                        </label>
+                        <label class="radio">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Weekly</label>    
+                        </label>
+                        <label class="radio">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Monthly</label>    
+                        </label>
+                        <div class="server">
+                            <input type="checkbox" id="s1">
+                            <label class="box" for="s1">
+                                <i class="fa-solid fa-server"></i>
                                 <span>Megaman</span>
                             </label>
-                            <label class="box">
-                                <i class="fa-solid fa-server d-block mb-10"></i>
+                            <input type="checkbox" id="s2">
+                            <label class="box" for="s2">
+                                <i class="fa-solid fa-server"></i>
                                 <span>Zero</span>
                             </label>
-                            <label class="box">
-                                <i class="fa-solid fa-server d-block mb-10"></i>
+                            <input type="checkbox" id="s3">
+                            <label class="box" for="s3">
+                                <i class="fa-solid fa-server"></i>
                                 <span>Sigma</span>
-                            </label>
-                        </form>
+                            </label>    
+                        </div>
                     </div>
                 </div>
             </div>
