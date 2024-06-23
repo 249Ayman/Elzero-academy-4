@@ -1193,3 +1193,12 @@ a{
     display: block;
 }
 /* end settings */
+/* start profile */
+.overview .grid{
+    display: grid;
+    grid-template-columns: 100% 30% 70%;
+}
+.overview .grid .box{
+    background: white;
+
+}
