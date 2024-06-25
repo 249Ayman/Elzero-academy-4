@@ -1194,10 +1194,6 @@ a{
 }
 /* end settings */
 /* start profile */
-.overview{
-    padding: 20px;
-    width: 100%;
-}
 .overview .person{
     display: flex;
     align-items: center;
@@ -1205,16 +1201,17 @@ a{
     width: 100%;
     background: white;
     padding: 20px;
+    padding-bottom: 0;
+    border-radius: 8px;
 }
 .overview .person .person-pic{
     justify-content: center ;
     text-align: center;
     width: 100%;
     flex: 1;
-    border-right: 1px solid #eee;
 }
 .overview .person .person-pic img{
-    width: 40%;
+    max-width: 40%;
     text-align: center;
 }
 .overview .person .person-pic span{
@@ -1237,4 +1234,143 @@ a{
 .overview .person .person-info{
     width: 100%;
     flex: 3;
+}
+.overview .person .person-info .info-box{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;    
+    transition: .3s;
+    border-left: 1px solid #eee;
+}
+.overview .person .person-info .info-box:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+
+}
+.overview .person .person-info .info-box:hover{
+    background: #f9f9f9;
+}
+.overview .info-button span:first-of-type{
+    color: var(--grey-color);
+}
+.show input{
+    appearance: none;
+}
+.show .show-toggle{
+    background: #ccc;
+    width: 74px;
+    height: 22px;
+    border-radius: 15px;
+    position: relative;
+    transition: .3s;
+}
+.show .show-toggle::before{
+    content: "\f00d";
+    position: absolute;
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    font-size: 10px;
+    height: 15px;
+    width: 15px;
+    background: white;
+    color: #aaa;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show input:checked + .show-toggle{
+    background: var(--blue-color);
+}
+.show input:checked + .show-toggle::before{
+    content: "\f00c";
+    left: 55px;
+    color: var(--blue-color);
+}
+@media (max-width:767px) {
+    .overview .person{
+        flex-direction: column;
+    }
+    .overview .person .person-pic img{
+        width: 20%;
+    }
+}
+.overview .info{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.overview .info .info-title p{
+    color: var(--grey-color);
+}
+.overview .info .myskills{
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.overview .info .myskills ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.overview .info .myskills ul li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.overview .info .myskills ul li span{
+    margin-right: 10px;
+    background-color: #eee;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.overview .info .activity{
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 3;
+}
+.overview .info .activity .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.overview .info .activity .box:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+
+}
+.overview .info .activity .box .img-box{
+    display: flex;
+}
+.overview .info .activity .box .img-box img{
+    width: 60px;
+}
+.overview .info .activity .box .img-box .img-info{
+    margin-left: 10px;
+}
+.overview .info .activity .box .img-box span{
+    display: block;
+}
+.overview .info .activity .box .img-box span:last-of-type{
+    color: var(--grey-color);
+    margin-top: 10px;
+}
+@media(max-width:767px){
+    .overview .info{
+        flex-direction: column;
+    }
+    .overview .info .activity .box{
+        flex-direction: column;
+    }
+    .overview .info .activity .box .img-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overview .info .activity .box .img-box span{
+        text-align: center;
+    }
 }
