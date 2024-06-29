@@ -961,11 +961,6 @@ a{
     grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
     gap: 20px;
 }
-@media(max-width:767px){
-    .settings .grid{
-        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    }
-}
 .settings .grid .box{
     background-color: white;
     padding: 20px;
@@ -1192,6 +1187,14 @@ a{
 .settings .backup .server .box span{
     display: block;
 }
+@media(max-width:767px){
+    .settings .grid{
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+    .settings .backup .server{
+        flex-direction: column;
+    }
+}
 /* end settings */
 /* start profile */
 .overview .person{
@@ -1373,4 +1376,114 @@ a{
     .overview .info .activity .box .img-box span{
         text-align: center;
     }
+}
+/* end profile */
+/* start projects */
+.projects-page{
+    width: 100%;
+}
+.card{
+    background: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card .card-title span{
+    display: block;
+    margin-bottom: 10px;
+}
+.card .card-title span:last-of-type{
+    font-size: 14px;
+    color: var(--grey-color);
+}
+.card .date{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--grey-color);
+    font-size: 13px;
+    padding: 10px;
+}
+.card .card-img{
+    margin-top: 40px;
+}
+.card .card-img a img{
+    width: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    background: white;
+    z-index: 1;
+}
+.card .card-img a:hover{
+    z-index: 1000;
+}
+.card .card-img a:not(:first-child){
+    margin-left: -20px;
+}
+.card .services{
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+}
+.card .services span{
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card .project-progress{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.card .project-progress .progress{
+    position: relative;
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+.red .project-progress .progress span{
+    position: absolute;
+    background: var(--red-color);
+    height: 8px;
+    border-radius: 8px;    
+}
+.green .project-progress .progress span{
+    position: absolute;
+    background: var(--green-color);
+    height: 8px;
+    border-radius: 8px;    
+}
+.blue .project-progress .progress span{
+    position: absolute;
+    background: var(--blue-color);
+    height: 8px;
+    border-radius: 8px;    
+}
+.card .project-progress i{
+    font-size: 14px;
+    color: var(--grey-color);
+}
+@media (max-width:767px) {
+    .card .services{
+        flex-direction: column;
+        width: fit-content;
+    }
+    .card .project-progress{
+        flex-direction: column;
+    }
+    .card .project-progress i{
+        margin-top: 10px;
+    }
+}
+/* end projects */
+.courses{
+    width: 100%;
 }
