@@ -1736,3 +1736,94 @@ a{
         flex-direction: column;
     }
 }
+/* end files */
+/* start plans */
+.plans{
+    width: 100%;
+}
+.plans .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.plans .box{
+    background: white;
+    padding: 20px;
+}
+.plans .green .plan-title{
+    text-align: center;
+    background: var(--green-color);
+    margin-bottom: 30px;
+    border: 3px solid white;
+    outline: 3px solid var(--green-color);
+}  
+.plans .blue .plan-title{
+    text-align: center;
+    background: var(--blue-color);
+    margin-bottom: 30px;
+    border: 3px solid white;
+    outline: 3px solid var(--blue-color);
+}  
+.plans .orange .plan-title{
+    text-align: center;
+    background: var(--orange-color);
+    margin-bottom: 30px;
+    border: 3px solid white;
+    outline: 3px solid var(--orange-color);
+}  
+
+.plans .box .plan-title h2{
+    margin: 0;
+    padding: 10px;
+    color: white;
+    padding-top: 30px;
+}
+.plans .box .plan-title .price{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.plans .box .plan-title .price span{
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+}
+.plans .box .list{
+}
+.plans .box .list li{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.plans .green .button{
+    width: fit-content;
+    padding: 4px 10px;
+    background: var(--green-color);
+    border-radius: 8px;
+}
+.plans .blue .button{
+    width: fit-content;
+    padding: 4px 10px;
+    background: var(--blue-color);
+    border-radius: 8px;
+}
+.plans .orange .button{
+    width: fit-content;
+    padding: 4px 10px;
+    background: var(--orange-color);
+    border-radius: 8px;
+}
+.plans .box .button a{
+    color: white;
+}
+@media (max-width:767px) {
+    .plans .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    }
+}
+/* end plans */
