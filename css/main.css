@@ -929,7 +929,6 @@ a{
 }
 .dashboard .table table thead{
     background-color: #eee;
-
 }
 .dashboard .table table thead td{
     font-weight: bold;
@@ -1175,7 +1174,7 @@ a{
     transition: .3s;
 }
 .settings .backup .server input{
-     appearance: none;
+    appearance: none;
 }
 .settings .backup .server input:checked + .box {
     border: 2px solid var(--blue-alt-color);
@@ -1771,7 +1770,6 @@ a{
     border: 3px solid white;
     outline: 3px solid var(--orange-color);
 }  
-
 .plans .box .plan-title h2{
     margin: 0;
     padding: 10px;
@@ -1791,8 +1789,6 @@ a{
     font-size: 20px;
     position: absolute;
     left: -20px;
-}
-.plans .box .list{
 }
 .plans .box .list li{
     margin-bottom: 15px;
